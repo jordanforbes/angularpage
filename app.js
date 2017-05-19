@@ -7,11 +7,11 @@ var paintingApp = angular.module('paintingApp', [
 paintingApp.config(function($routeProvider){
 	$routeProvider
 		.when('/',{
-			templateUrl:"/views/Paintinglist.html",
+			templateUrl:"./views/Paintinglist.html",
 			controller: 'PaintingListCtrl'
 		})
 		.when('/:paintingTitle',{
-			templateUrl:"/views/Paintingdetail.html",
+			templateUrl:"./views/Paintingdetail.html",
 			controller: 'PaintingDetailCtrl'
 		})
 		.otherwise({
