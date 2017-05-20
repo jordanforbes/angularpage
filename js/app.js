@@ -8,7 +8,7 @@ var paintingApp = angular.module('paintingApp', [
 paintingApp.config(function($routeProvider){
 	$routeProvider.
 		when('/',{
-			templateUrl:"/views/main.html",
+			templateUrl:"/views/main.ejs",
 			controller: 'PaintingListCtrl'
 		}).
 		// when('/:paintingId',{

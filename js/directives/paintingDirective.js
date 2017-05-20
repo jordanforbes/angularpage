@@ -3,7 +3,7 @@ angular.module('paintingDirective',[])
 	return{
 		scope: { painting: '=', onPaintingClick: '&'},
 		restrict: 'A',
-		templateUrl:'/views/painting.html',
+		templateUrl:'/views/painting.ejs',
 		controller: function($scope, paintings){
 				$scope.onPictureClick= function(){
 					$scope.onPaintingClick({selectedSrc: $scope.src}),
