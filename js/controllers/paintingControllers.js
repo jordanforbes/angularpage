@@ -4,7 +4,7 @@ paintingControllers.controller('PaintingListCtrl', function($scope, paintings){
 	paintings.list(function(paintings){
 		$scope.paintings = paintings;
 	})
-	$scope.selectedSrc= '/assets/Paintings/Oy.jpg'
+	$scope.selectedSrc= '/assets/paintings/oy.jpg'
 	$scope.selectedTitle='Oy'
 	$scope.onPaintingSelection = function(selectedSrc, selectedTitle, selectedYear, selectedDescription){
 		$scope.selectedSrc= selectedSrc;
