@@ -1,4 +1,5 @@
 var express = require('express');
+var bodyparser = require('body-parser');
 
 // var connect = require('connect');
 // var serveStatic = require('serve-static')
@@ -10,7 +11,7 @@ var app = express();
 
 //setup middleware
 app.use(express.static(pub));
-app.use('/views', express.static(__dirname + '/assets'))
+app.use('/views', express.static(__dirname + '/views'))
 app.use('/assets', express.static(__dirname + '/assets'));
 app.use('/css', express.static(__dirname + '/css'));
 app.use('/db', express.static(__dirname + '/db'));
